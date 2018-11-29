@@ -15,9 +15,9 @@
 
 ### Benefits
 
-Quick deployments<br>
-Custom images<br>
-Known baselines<br>
+Quick deployments - new instances available in ~1 second<br>
+Custom images - databases available on container startup<br>
+Known baselines - database schema at known level<br>
 Simple upgrade process<br>
 Easy to incorporate into CI/CD pipelines
 
