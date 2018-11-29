@@ -35,11 +35,7 @@ mssql-cli -S 'localhost,15333' -U sa -P Testing1122
 
 
 # create the database
-CREATE DATABASE [DatabaseB]
-ON PRIMARY
-    (NAME = N'DatabaseB', FILENAME = N'/sqldata/DatabaseB.mdf')
-LOG ON
-    (NAME = N'DatabaseB_log', FILENAME = N'/sqllog/DatabaseB_log.ldf');
+CREATE DATABASE [DatabaseB] ON PRIMARY (NAME = N'DatabaseB', FILENAME = N'/sqldata/DatabaseB.mdf') LOG ON (NAME = N'DatabaseB_log', FILENAME = N'/sqllog/DatabaseB_log.ldf');
 
 
 
@@ -67,8 +63,10 @@ SELECT COUNT(*) AS Records FROM DatabaseB.dbo.TestTable;
 EXIT
 
 
+
 # blow away container
-docker rm $(docker -q -a) -f
+docker kill testcontainer3
+docker rm testcontainer3
 
 
 
@@ -92,9 +90,7 @@ mssql-cli -S 'localhost,15444' -U sa -P Testing1122
 
 
 # attach the database
-CREATE DATABASE [DatabaseB] ON 
-(FILENAME = '/sqldata/DatabaseB.mdf'),
-(FILENAME = '/sqllog/DatabaseB_log.ldf') FOR ATTACH;
+CREATE DATABASE [DatabaseB] ON (FILENAME = '/sqldata/DatabaseB.mdf'),(FILENAME = '/sqllog/DatabaseB_log.ldf') FOR ATTACH;
 
 
 
@@ -115,3 +111,4 @@ EXIT
 
 # clean up
 docker rm $(docker ps -q -a) -f
+docker rmi testimage
