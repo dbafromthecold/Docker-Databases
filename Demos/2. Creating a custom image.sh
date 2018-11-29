@@ -28,6 +28,12 @@ testimage
 
 
 
+
+# 
+docker ps -a
+
+
+
 # connect to the sql instance
 mssql-cli -S localhost,15222 -U sa -P Testing1122
 
@@ -45,3 +51,4 @@ EXIT
 
 # clean up
 docker rm $(docker ps -a -q) -f
+docker rmi testimage

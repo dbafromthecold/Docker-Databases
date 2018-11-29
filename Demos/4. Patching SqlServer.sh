@@ -16,14 +16,14 @@ docker volume create sqldata
 # run a container for SQL 2017
 docker run -d -p 15555:1433 \
 -v sqldata:/sqlserver \
---env ACCEPT_EULA=Y --env SA_PASSWORD=Testing11 \
+--env ACCEPT_EULA=Y --env SA_PASSWORD=Testing1122 \
 --name testcontainer5 \
 microsoft/mssql-server-linux:latest
 
 
 
 # connect to sql
-mssql-cli -S localhost,15555 -U sa -P Testing11
+mssql-cli -S localhost,15555 -U sa -P Testing1122
 
 
 
@@ -55,14 +55,14 @@ docker stop testcontainer5
 # run another container with SQL 2017 CU11
 docker run -d -p 15666:1433 \
 -v sqldata:/sqlserver \
---env ACCEPT_EULA=Y --env SA_PASSWORD=Testing11 \
+--env ACCEPT_EULA=Y --env SA_PASSWORD=Testing1122 \
 --name testcontainer6 \
 mcr.microsoft.com/mssql/server:2019-CTP2.1-ubuntu
 
 
 
 # connect to sql
-mssql-cli -S localhost,15666 -U sa -P Testing11
+mssql-cli -S localhost,15666 -U sa -P Testing1122
 
 
 

@@ -111,4 +111,3 @@ EXIT
 
 # clean up
 docker rm $(docker ps -q -a) -f
-docker rmi testimage
