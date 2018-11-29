@@ -23,6 +23,10 @@ Easy to incorporate into CI/CD pipelines
 
 ---
 
+## Demo
+
+---
+
 ### Issues
 
 Not all features available<br>
@@ -33,7 +37,6 @@ Persisting data<br>
 
 ### Persisting data
 
-#### Three different methods
 1. Mounting volumes from the host<br>
 2. Named volumes<br>
 3. Data volume containers<br>
@@ -45,6 +48,11 @@ Persisting data<br>
 ---
 
 ### Upgrades
+
+Docker containers make upgrades easy<br>
+Existing containers are stopped<br>
+New containers (running new image) are started<br>
+Databases re-attached to new container (if needed)
 
 ---
 
