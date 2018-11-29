@@ -21,7 +21,7 @@ docker images
 
 
 # run container from image
-docker run -d -p 152222:1433 \
+docker run -d -p 15222:1433 \
 --env ACCEPT_EULA=Y --env SA_PASSWORD=Testing1122 \
 --name testcontainer2 \
 testimage
@@ -29,7 +29,7 @@ testimage
 
 
 # connect to the sql instance
-mssql-cli -S localhost,15111 -U sa -P Testing1122
+mssql-cli -S localhost,15222 -U sa -P Testing1122
 
 
 

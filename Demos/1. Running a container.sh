@@ -14,7 +14,7 @@ microsoft/mssql-server-linux:latest
 
 
 # copy a database backup into the container
-docker cp ~/git/Docker-Databases/DatabaseA.bak \
+docker cp ~/git/Docker-Databases/Demos/DatabaseA.bak \
 testcontainer1:/var/opt/mssql/data/
 
 
