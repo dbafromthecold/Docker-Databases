@@ -13,14 +13,21 @@
 
 ---
 
-### Session Aim
+### Benefits
+
+---
+
+## Issues
+
+---
+
+## Demos
 
 ---
 
 ### Resources
 
-@size[0.6em](https://github.com/dbafromthecold/Docker-Databases)<br>
-@size[0.6em](https://dbafromthecold.com/2017/03/15/summary-of-my-container-series/)
+@size[0.8em](https://github.com/dbafromthecold/Docker-Databases)<br>
 
 @snap[east]
 ![QR](assets/images/Docker-Databases-QR.png)
