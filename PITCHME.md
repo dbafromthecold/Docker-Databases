@@ -33,10 +33,10 @@ Persisting data<br>
 
 ### Persisting data
 
-### Three different methods
-Mounting volumes from the host<br>
-Named volumes<br>
-Data volume containers<br>
+#### Three different methods
+1. Mounting volumes from the host<br>
+2. Named volumes<br>
+3. Data volume containers<br>
 
 ---
 
