@@ -19,8 +19,7 @@
 
 ### Resources
 
-https://github.com/dbafromthecold/Docker-Databases <br>
-<br>
+https://github.com/dbafromthecold/Docker-Databases
 https://dbafromthecold.com/2017/03/15/summary-of-my-container-series/ 
 
 @snap[east]
