@@ -13,21 +13,21 @@
 
 ---
 
-### Benefits
+## Benefits
 
-Quick deployments - new instances available in ~1 second<br>
-Custom images - databases available on container startup<br>
+New containers available in ~1 second<br>
+Custom images - databases available immediately<br>
 Known baselines - database schema at known level<br>
 Simple upgrade process<br>
 Easy to incorporate into CI/CD pipelines
 
 ---
 
-## Demo
+# Demo
 
 ---
 
-### Issues
+## Issues
 
 Not all features available<br>
 No windows authentication<br>
@@ -35,7 +35,7 @@ Persisting data<br>
 
 ---
 
-### Persisting data
+## Persisting data
 
 1. Mounting volumes from the host<br>
 2. Named volumes<br>
@@ -43,11 +43,11 @@ Persisting data<br>
 
 ---
 
-## Demo
+# Demo
 
 ---
 
-### Upgrades
+## Upgrades
 
 Docker containers make upgrades easy<br>
 Existing containers are stopped<br>
@@ -56,11 +56,11 @@ Databases re-attached to new container (if needed)
 
 ---
 
-## Demo
+# Demo
 
 ---
 
-### Resources
+## Resources
 
 @size[0.7em](https://github.com/dbafromthecold/Docker-Databases)<br>
 
