@@ -15,9 +15,17 @@
 
 ### Benefits
 
+Quick deployments<br>
+Custom images<br>
+Known baselines<br>
+
 ---
 
-## Issues
+### Issues
+
+Not all features avaialble<br>
+No windows authentication<br>
+Persisting data<br>
 
 ---
 
@@ -27,7 +35,7 @@
 
 ### Resources
 
-@size[0.8em](https://github.com/dbafromthecold/Docker-Databases)<br>
+@size[0.7em](https://github.com/dbafromthecold/Docker-Databases)<br>
 
 @snap[east]
 ![QR](assets/images/Docker-Databases-QR.png)
