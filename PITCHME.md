@@ -18,18 +18,37 @@
 Quick deployments<br>
 Custom images<br>
 Known baselines<br>
+Simple upgrade process<br>
+Easy to incorporate into CI/CD pipelines
 
 ---
 
 ### Issues
 
-Not all features avaialble<br>
+Not all features available<br>
 No windows authentication<br>
 Persisting data<br>
 
 ---
 
-## Demos
+### Persisting data
+
+### Three different methods
+Mounting volumes from the host<br>
+Named volumes<br>
+Data volume containers<br>
+
+---
+
+## Demo
+
+---
+
+### Upgrades
+
+---
+
+## Demo
 
 ---
 
