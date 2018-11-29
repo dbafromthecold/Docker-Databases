@@ -13,7 +13,7 @@ microsoft/mssql-server-linux:latest
 
 
 
-# 
+# verify container is running
 docker ps -a
 
 

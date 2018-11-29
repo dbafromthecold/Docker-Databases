@@ -47,17 +47,17 @@ EXIT
 
 
 
-# stop the container
-docker stop testcontainer5
-
-
-
-# run another container with SQL 2017 CU11
+# run another container with SQL 2019
 docker run -d -p 15666:1433 \
 -v sqldata:/sqlserver \
 --env ACCEPT_EULA=Y --env SA_PASSWORD=Testing1122 \
 --name testcontainer6 \
 mcr.microsoft.com/mssql/server:2019-CTP2.1-ubuntu
+
+
+
+# stop the old container
+docker stop testcontainer5
 
 
 
@@ -67,7 +67,7 @@ mssql-cli -S localhost,15666 -U sa -P Testing1122
 
 
 # attach the database
-CREATE DATABASE [DatabaseC] ON (FILENAME = N'/sqlserver/DatabaseC.mdf'), (FILENAME = '/sqlserver/DatabaseC_log.ldf') FOR ATTACH
+CREATE DATABASE [DatabaseC] ON (FILENAME = N'/sqlserver/DatabaseC.mdf'), (FILENAME = '/sqlserver/DatabaseC_log.ldf') FOR ATTACH;
 
 
 

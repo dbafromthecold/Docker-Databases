@@ -19,6 +19,7 @@ Quick deployments<br>
 Custom images<br>
 Known baselines<br>
 Simple upgrade process<br>
+Testing new versions<br>
 Easy to incorporate into CI/CD pipelines
 
 ---

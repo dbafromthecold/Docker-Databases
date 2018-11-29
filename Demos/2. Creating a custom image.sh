@@ -29,7 +29,7 @@ testimage
 
 
 
-# 
+# verify the container is running
 docker ps -a
 
 
