@@ -5,6 +5,11 @@
 
 
 
+# set location
+cd ~/git/Docker-Databases/Demos
+
+
+
 # view the dockerfile
 cat dockerfile
 
