@@ -13,14 +13,24 @@
 
 ---
 
-## Benefits
+### Problem
 
-New containers available in ~1 second<br>
-Custom images - databases available immediately<br>
-Known baselines - database schema at known level<br>
-Simple upgrade process<br>
-Testing new versions<br>
-Easy to incorporate into CI/CD pipelines
+QA/Dev departments repeatedly creating new VMs <br>
+All VMs require a local instance of SQL Server <br>
+SQL installed from chocolately <br>
+30+ databases then restored via PoSH scripts <br>
+SQL install taking ~40 minutes from start to finish
+
+---
+
+### Solution
+
+Docker Containers! <br>
+Deploy containers running SQL Server <br>
+SQL containers built from custom image <br>
+No longer need to install SQL <br>
+No longer need to restore databases <br>
+Resources freed up on VMs 
 
 ---
 
@@ -28,17 +38,28 @@ Easy to incorporate into CI/CD pipelines
 
 ---
 
-## Architecture
+### Benefits
+
+New VMs deployed in a fraction of the previous time <br>
+No longer need to run PoSH scripts to restore databases <br>
+Base image can be used to keep containers at production level <br>
+More VMs can be provisioned on host due to each VM requiring less resources 
+
+---
+
+### Architecture
 
 ![Architecture](assets/images/DockerArchitecture.PNG)
 
 ---
 
-## Issues
+### Issues
 
-Not all features available<br>
-No windows authentication<br>
-Persisting data<br>
+Apps using DNS entries to reference local SQL instance <br>
+Update to existing test applications <br>
+Trial and error to integrate with Octopus deploy <br>
+New ways of thinking <br>
+Persisting data
 
 ---
 
