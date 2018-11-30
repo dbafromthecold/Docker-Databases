@@ -30,7 +30,7 @@ Easy to incorporate into CI/CD pipelines
 
 ## Architecture
 
-![Architecture](assets/images/Architecture.png)
+![Architecture](assets/images/DockerArchitecture.PNG)
 
 ---
 
