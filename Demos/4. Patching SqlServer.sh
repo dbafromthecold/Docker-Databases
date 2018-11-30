@@ -3,6 +3,11 @@
 ## Upgrading SQL Server
 
 
+# remove old volumes
+docker volumes prune
+
+
+
 # check images
 docker images
 
@@ -10,6 +15,11 @@ docker images
 
 # create named volume
 docker volume create sqldata
+
+
+
+# view volume
+docker volume ls
 
 
 
@@ -53,6 +63,11 @@ docker run -d -p 15666:1433 \
 --env ACCEPT_EULA=Y --env SA_PASSWORD=Testing1122 \
 --name testcontainer6 \
 mcr.microsoft.com/mssql/server:2019-CTP2.1-ubuntu
+
+
+
+# check containers running
+docker ps -a
 
 
 
