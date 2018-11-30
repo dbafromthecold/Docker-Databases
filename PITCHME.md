@@ -28,6 +28,12 @@ Easy to incorporate into CI/CD pipelines
 
 ---
 
+## Architecture
+
+![Architecture](assets/images/Architecture.png)
+
+---
+
 ## Issues
 
 Not all features available<br>
