@@ -23,6 +23,8 @@ SQL install taking ~40 minutes from start to finish
 
 ---
 
+https://www.docker.com/
+
 ![DockerWebsite](assets/images/DockerWebsite.png)
 
 ---
