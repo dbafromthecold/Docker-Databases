@@ -5,7 +5,7 @@
 
 
 # remove old volumes
-docker volumes prune
+docker volume prune -f
 
 
 
@@ -38,6 +38,11 @@ mssql-cli -S localhost,15555 -U sa -P Testing1122
 
 
 
+# confirm version of SQL
+SELECT @@VERSION;
+
+
+
 # create a database on the mounted volume
 CREATE DATABASE [DatabaseC] ON PRIMARY (NAME = N'DatabaseC', FILENAME = N'/sqlserver/DatabaseC.mdf') LOG ON (NAME = N'DatabaseC_log', FILENAME = N'/sqlserver/DatabaseC_log.ldf');
 
@@ -45,11 +50,6 @@ CREATE DATABASE [DatabaseC] ON PRIMARY (NAME = N'DatabaseC', FILENAME = N'/sqlse
 
 # confirm the database is there
 SELECT name FROM sys.databases;
-
-
-
-# confirm version of SQL
-SELECT @@VERSION;
 
 
 
@@ -82,6 +82,11 @@ mssql-cli -S localhost,15666 -U sa -P Testing1122
 
 
 
+# confirm version of SQL
+SELECT @@VERSION;
+
+
+
 # attach the database
 CREATE DATABASE [DatabaseC] ON (FILENAME = N'/sqlserver/DatabaseC.mdf'), (FILENAME = '/sqlserver/DatabaseC_log.ldf') FOR ATTACH;
 
@@ -89,26 +94,6 @@ CREATE DATABASE [DatabaseC] ON (FILENAME = N'/sqlserver/DatabaseC.mdf'), (FILENA
 
 # confirm the database is there
 SELECT name FROM sys.databases;
-
-
-
-# confirm version of SQL Server
-SELECT @@VERSION;
-
-
-
-# check compatibility level of database
-SELECT compatibility_level FROM sys.databases WHERE name = 'DatabaseC';
-
-
-
-# change compatibility level to SQL 2019
-ALTER DATABASE [DatabaseC] SET COMPATIBILITY_LEVEL = 150;
-
-
-
-# confirm compatibility level has been changed
-SELECT compatibility_level FROM sys.databases WHERE name = 'DatabaseC';
 
 
 
