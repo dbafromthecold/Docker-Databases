@@ -23,18 +23,11 @@ SQL install taking ~40 minutes from start to finish
 
 ---
 
-# Demo
+[!DockerWebsite](/assets/images/DockerWebsite.png)
 
 ---
 
-### Solution
-
-Docker Containers! <br>
-Deploy containers running SQL Server <br>
-SQL containers built from custom image <br>
-No longer need to install SQL <br>
-No longer need to restore databases <br>
-Resources freed up on VMs 
+# Demo
 
 ---
 
