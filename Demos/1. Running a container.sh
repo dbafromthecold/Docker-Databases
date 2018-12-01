@@ -5,6 +5,16 @@
 
 
 
+# search for an image
+docker search microsoft/mssql
+
+
+
+# pull the image down
+docker pull microsoft/mssql-server-linux:latest
+
+
+
 # run a container
 docker run -d -p 15111:1433 \
 --env ACCEPT_EULA=Y --env SA_PASSWORD=Testing1122 \

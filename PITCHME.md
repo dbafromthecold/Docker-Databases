@@ -23,6 +23,10 @@ SQL install taking ~40 minutes from start to finish
 
 ---
 
+# Demo
+
+---
+
 ### Solution
 
 Docker Containers! <br>
@@ -34,22 +38,12 @@ Resources freed up on VMs
 
 ---
 
-# Demo
-
----
-
 ### Benefits
 
 New VMs deployed in a fraction of the previous time <br>
 No longer need to run PoSH scripts to restore databases <br>
 Base image can be used to keep containers at production level <br>
 More VMs can be provisioned on host due to each VM requiring less resources 
-
----
-
-### Architecture
-
-![Architecture](assets/images/DockerArchitecture.PNG)
 
 ---
 
@@ -65,9 +59,9 @@ Persisting data
 
 ## Persisting data
 
-1. Mounting volumes from the host<br>
-2. Named volumes<br>
-3. Data volume containers<br>
+Mounting volumes from the host<br>
+Named volumes<br>
+Data volume containers<br>
 
 ---
 
@@ -90,8 +84,5 @@ Databases re-attached to new container (if needed)
 
 ## Resources
 
-@size[0.7em](https://github.com/dbafromthecold/Docker-Databases)<br>
-
-@snap[east]
-![QR](assets/images/Docker-Databases-QR.png)
-@snapend
+https://github.com/dbafromthecold/Docker-Databases<br>
+https://dbafromthecold.com/2017/03/15/summary-of-my-container-series
